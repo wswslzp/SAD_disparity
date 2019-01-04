@@ -50,7 +50,7 @@ initial begin
 	rst_n = 1;
 end
 
-always #50 clk <= ~clk;
+always #50 clk++;
 
 bit [BUF_ADDR_WIDTH-1:0] addr;
 bit [PIXEL_SIZE-1:0] data;
