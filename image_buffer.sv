@@ -10,11 +10,13 @@ module image_buffer #(
 		// system signal, clock, reset
 		input wire clk, 
 		input wire rst_n,
+
 		// read transaction
 		input wire [BUF_ADDR_WIDTH-1:0] buf_raddr,
 		input wire buf_rvalid,
 		output reg buf_rready,
 		output reg [PIXEL_SIZE-1:0] buf_rdata,
+
 		// write transaction
 		input wire [BUF_ADDR_WIDTH-1:0] buf_waddr,
 		input wire [PIXEL_SIZE-1:0] buf_wdata,
